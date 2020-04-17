@@ -4,6 +4,7 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Saved from "./pages/saved";
 
 function App() {
   return (
@@ -17,6 +18,11 @@ function App() {
           <Route exact path="/books/:id">
             <Detail />
           </Route>
+
+          <Route exact path="/saved">
+            <Saved />
+          </Route>
+
           <Route>
             <NoMatch />
           </Route>
